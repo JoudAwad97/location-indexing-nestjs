@@ -1,0 +1,28 @@
+# deps
+node_modules/
+
+# build
+dist/
+*.tsbuildinfo
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs
+*.log
+npm-debug.log*
+
+# ide
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# os
+.DS_Store
+Thumbs.db
+
+# postgres volume mount (if ever bound to host)
+postgres_data/
