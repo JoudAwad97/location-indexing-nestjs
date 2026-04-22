@@ -1,5 +1,6 @@
-import { Module, MiddlewareConsumer, NestModule, ValidationPipe } from '@nestjs/common';
+import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { APP_PIPE } from '@nestjs/core';
+import { ValidationPipe } from '@nestjs/common';
 import { AppConfigModule } from './shared/config/config.module';
 import { AppLoggerModule } from './shared/logging/logger.module';
 import { RequestIdMiddleware } from './shared/logging/request-id.middleware';
