@@ -6,6 +6,7 @@ import { RedisModule } from './shared/redis/redis.module';
 import { TwoDSearchModule } from './modules/two-d-search/two-d-search.module';
 import { FixedGridModule } from './modules/fixed-grid/fixed-grid.module';
 import { GeohashModule } from './modules/geohash/geohash.module';
+import { QuadtreeModule } from './modules/quadtree/quadtree.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { GeohashModule } from './modules/geohash/geohash.module';
     TwoDSearchModule,
     FixedGridModule,
     GeohashModule,
+    QuadtreeModule,
   ],
 })
 export class AppModule {}
