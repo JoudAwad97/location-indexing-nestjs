@@ -6,7 +6,6 @@ FROM postgis/postgis:16-3.4
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         postgresql-16-h3 \
-        postgresql-16-h3-postgis \
     && rm -rf /var/lib/apt/lists/*
 
 # Init script enables extensions on DB creation
