@@ -5,6 +5,7 @@ import { DatabaseModule } from './shared/database/database.module';
 import { RedisModule } from './shared/redis/redis.module';
 import { TwoDSearchModule } from './modules/two-d-search/two-d-search.module';
 import { FixedGridModule } from './modules/fixed-grid/fixed-grid.module';
+import { GeohashModule } from './modules/geohash/geohash.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { FixedGridModule } from './modules/fixed-grid/fixed-grid.module';
     RedisModule,
     TwoDSearchModule,
     FixedGridModule,
+    GeohashModule,
   ],
 })
 export class AppModule {}
