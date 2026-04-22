@@ -11,8 +11,8 @@
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
     "format": "prettier --write \"src/**/*.ts\"",
-    "migrate": "node-pg-migrate up --config-file .pgmigraterc.json",
-    "migrate:down": "node-pg-migrate down --config-file .pgmigraterc.json",
+    "migrate": "node --env-file=.env node_modules/.bin/node-pg-migrate up --config-file .pgmigraterc.json",
+    "migrate:down": "node --env-file=.env node_modules/.bin/node-pg-migrate down --config-file .pgmigraterc.json",
     "seed": "ts-node -r tsconfig-paths/register src/seeding/seed.command.ts",
     "db:shell": "docker compose exec postgres psql -U postgres -d location_indexing",
     "redis:cli": "docker compose exec redis redis-cli"
