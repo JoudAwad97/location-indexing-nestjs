@@ -7,6 +7,7 @@ import { TwoDSearchModule } from './modules/two-d-search/two-d-search.module';
 import { FixedGridModule } from './modules/fixed-grid/fixed-grid.module';
 import { GeohashModule } from './modules/geohash/geohash.module';
 import { QuadtreeModule } from './modules/quadtree/quadtree.module';
+import { S2Module } from './modules/s2/s2.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { QuadtreeModule } from './modules/quadtree/quadtree.module';
     FixedGridModule,
     GeohashModule,
     QuadtreeModule,
+    S2Module,
   ],
 })
 export class AppModule {}
